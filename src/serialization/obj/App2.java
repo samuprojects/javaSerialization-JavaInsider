@@ -1,4 +1,6 @@
-package serialization;
+package serialization.obj;
+
+import serialization.Client;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

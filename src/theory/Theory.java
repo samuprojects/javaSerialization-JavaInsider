@@ -1,7 +1,7 @@
 package theory;
 
 @SuppressWarnings("ALL")
-public class theory {
+public class Theory {
 
     /*
     *

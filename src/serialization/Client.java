@@ -27,7 +27,7 @@ public class Client implements Serializable { // incluindo a implementação par
     }
 
     public Client(int id, String name, LocalDate birthDate, String document) {
-        System.out.println("[ Constructor ]"); // adicionando para mostrar na tela quando o objeto é criado
+        //System.out.println("[ Constructor ]"); // adicionando para mostrar na tela quando o objeto é criado
         this.id = id;
         this.name = name;
         this.birthDate = birthDate;

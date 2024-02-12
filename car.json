@@ -1,7 +1,7 @@
 {
   "brand" : "Renault",
   "color" : "WHITE",
-  "manufacturingDate" : [ 2020, 6, 13 ],
+  "manufacturingDate" : "13/06/2020",
   "engine" : {
     "engineModel" : "XPTO"
   }

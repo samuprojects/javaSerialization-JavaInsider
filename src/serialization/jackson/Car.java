@@ -1,5 +1,6 @@
 package serialization.jackson;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -10,7 +11,11 @@ public class Car {
 
     private String brand;
     private Color color;
-    private LocalDate manufacturingDate;
+
+    // caso necessite formatar algum atributo em específico pode utilizar a anotação abaixo que também serve para datas
+    // recebe dois parâmetros, o shape que define como será serializado (por exemplo String), e o pattern que define qual será o padrão dessa String utilizando os placeHolders de formatação de data do SimpleDateFormat
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
+    private LocalDate manufacturingDate; // com a anotação o que era um array virará uma String, que também serve no processo de desserialização
     private Engine engine;
 
     public Car(String brand, Color color, LocalDate manufacturingDate, Engine engine) {

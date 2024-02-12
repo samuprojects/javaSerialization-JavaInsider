@@ -3,7 +3,6 @@
   "color" : "WHITE",
   "manufacturingDate" : [ 2020, 6, 13 ],
   "engine" : {
-    "hp" : 89.3,
     "engineModel" : "XPTO"
   }
 }

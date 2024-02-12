@@ -1,5 +1,7 @@
 package serialization.jackson;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.time.LocalDate;
 
 @SuppressWarnings("ALL")
@@ -48,7 +50,10 @@ public class Car {
     }
 
     public static class Engine {
-        private final String model;
+
+        // para exportar com outro nome o atributo sem alterar o código da aplicação (geralmente para integrar sistemas externos) utilizar a anotação abaixo
+        @JsonProperty("engineModel")
+        private final String model; // com essa anotação será serializado com o nome informado (que serve na desserialização também)
         private final double hp;
 
         public Engine(String model, double hp) {

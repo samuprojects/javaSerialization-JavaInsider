@@ -10,7 +10,7 @@ public class App6 {
 
         // a propriedade brand que está com null, com a alteração no mapper da classe utilitária, não constará no arquivo
         Car car = new Car(
-                null,
+                "Renault",
                 Car.Color.WHITE,
                 LocalDate.of(2020, 6, 13),
                 new Car.Engine(

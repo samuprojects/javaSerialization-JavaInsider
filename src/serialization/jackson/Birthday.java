@@ -9,12 +9,24 @@ public class Birthday {
 
     // PORÉM EXISTE UMA FORMA DE CONSIDERAR A SERIALIZAÇÃO E DESSERIALIZAÇÃO DE CAMPOS PRIVADOS NO JACKSON INCLUÍDO NA CLASSE UTILITÁRIA JsonUtils
 
-    public Birthday() {}
+    public Birthday() {} // o construtor padrão é importante na desserialização executada pelo jackson, pois primeiro ele constrói o objeto vazio e depois injeta os valores lidos do JSON dentro das propriedades
 
     public Birthday(int day, int month, int year) {
         this.day = day;
         this.month = month;
         this.year = year;
+    }
+
+    public int getDay() {
+        return day;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public int getYear() {
+        return year;
     }
 
     @Override
